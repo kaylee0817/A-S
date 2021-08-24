@@ -1,5 +1,7 @@
 package p1s3;
 
+import p1s4.LinkedListQueue;
+
 import java.util.Random;
 
 public class CompareArrayQueueAndLoopQueue {
@@ -25,13 +27,17 @@ public class CompareArrayQueueAndLoopQueue {
 
     }
     public static void main(String[] args) {
-        int opCount = 100000;
-        Queue<Integer> arrayQueue = new ArrayQueue<>();
+        int opCount = 100000000;
+        /*Queue<Integer> arrayQueue = new ArrayQueue<>();
         double time1 = testQueue(arrayQueue, opCount);
-        System.out.println("ArrayQueue, time: " + time1 + "s");
+        System.out.println("ArrayQueue, time: " + time1 + "s");*/
 
         Queue<Integer> loopQueue = new LoopQueue<>();
         double time2 = testQueue(loopQueue, opCount);
         System.out.println("LoopQueue, time: " + time2 + "s");
+
+        LinkedListQueue<Integer> linkedListQueue = new LinkedListQueue<>();
+        double time3 = testQueue(linkedListQueue, opCount);
+        System.out.println("LinkedListQueue, time: " + time3 + "s");
     }
 }
