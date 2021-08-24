@@ -1,4 +1,4 @@
-package leetcode.array_stack_queue;
+package leetcode.array_stack_queue.ImplementQueueUsingStacks;
 
 
 import java.util.Stack;
@@ -24,12 +24,12 @@ import java.util.Stack;
  *
  * 你能否实现每个操作均摊时间复杂度为 O(1) 的队列？换句话说，执行 n 个操作的总时间复杂度为 O(n) ，即使其中一个操作可能花费较长时间。
  */
-public class ImplementQueueUsingStacks {
+public class Solution {
 
     Stack<Integer> inStack;
     Stack<Integer> outStack;
 
-    public ImplementQueueUsingStacks() {
+    public Solution() {
         inStack = new Stack<>();
         outStack = new Stack<>();
 

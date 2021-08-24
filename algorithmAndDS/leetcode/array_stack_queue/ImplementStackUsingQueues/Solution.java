@@ -1,4 +1,4 @@
-package leetcode.array_stack_queue;
+package leetcode.array_stack_queue.ImplementStackUsingQueues;
 
 import java.util.Queue;
 
@@ -20,12 +20,12 @@ import java.util.LinkedList;
  *
  * 你只能使用队列的基本操作 —— 也就是 push to back、peek/pop from front、size 和 is empty 这些操作。
  */
-public class ImplementStackUsingQueues {
+public class Solution {
 
     private Queue<Integer> queue1;
     private Queue<Integer> queue2;
 
-    public ImplementStackUsingQueues() {
+    public Solution() {
         queue1 = new LinkedList<>();
         queue2 = new LinkedList<>();
     }

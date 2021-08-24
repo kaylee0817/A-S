@@ -1,0 +1,1 @@
+1. 每个node object里包含下一个node object。所以对于一个node object，不做判断的话无法判断有多少个node隐藏在里面
